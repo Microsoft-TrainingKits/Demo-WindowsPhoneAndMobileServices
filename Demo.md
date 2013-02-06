@@ -113,16 +113,15 @@ In this step we explore _To do list_ application code and see how simple the Win
 1. Open **MainPage.xaml.cs** to see how the mobile service client is then used for Inserts, Updates, Reads and **show** the following:
 
    - Show the TodoItem entity and explain how the DataMember attribute can be used to provide different names to be used within the mobile service and for persisting the data to the underlying Windows Azure SQL Database.  Note that you can also manipulate the Table that the entity is serialized to using DataTable attribute.  This is useful for some environments where the DBAs may require a specific table naming convention e.g tblTodoItem etc.
-
-
+		
 		````C#
 		 public class TodoItem
 		 {
-		 	 public int Id { get; set; }
-	
+			 public int Id { get; set; }
+
 			 [DataMember(Name = "text")]
 			 public string Text { get; set; }
-	
+
 			 [DataMember(Name = "complete")]
 			 public bool Complete { get; set; }
 		 }
