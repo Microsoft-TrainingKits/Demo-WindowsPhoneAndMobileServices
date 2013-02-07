@@ -1,5 +1,5 @@
 ﻿<a name="title" />
-# Getting Started with Windows Azure Mobile Services #
+# Getting Started with Windows Azure Mobile Services for Windows Phone#
 
 ---
 <a name="Overview" />
